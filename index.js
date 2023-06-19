@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 
 app.get('/',(req,res)=>{
-  res.json({message:'server is woring fine',status:201})
+  res.json({message:'server is woring fine jani',status:201})
 })
 
 const server = app.listen(8000, () => {
