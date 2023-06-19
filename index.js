@@ -6,9 +6,9 @@ const cors = require('cors');
 const app = express();
 app.use(cors());
 
-// app.get('/',(req,res)=>{
-//   res.status.send({message:'server is woring fine',status:201})
-// })
+app.get('/',(req,res)=>{
+  res.json({message:'server is woring fine',status:201})
+})
 
 const server = app.listen(8000, () => {
   console.log('Server is running on port 8000');
